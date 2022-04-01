@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números pares</title>
+</head>
+<body>
+
+    <script>
+
+        function pulaLinha(){
+            document.write("<br>")
+        }
+
+        function frase(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var contador = 2;
+        var cont = 30;
+
+        while (contador <= 100) {
+            frase(contador);
+            contador+=2;
+        }
+
+        frase("fim");
+
+        frase("Novo exercicio")
+        while(cont <= 40) {
+
+            if (cont == 33 || cont == 37) {
+                cont+=1;
+            } else {
+                frase(cont);
+                cont+=1;
+            } 
+        }
+        frase("fim");
+
+        frase("NÚMEROS DECRESCENTES")
+
+        var cont2 = 20;
+
+        while (cont2 >= 0) {
+            frase(cont2);
+            cont2-=1;
+        }
+
+        frase("FIM ! AGORA UM NOVO EXERCICIO")
+
+        var cont3 = 0;
+
+        while(cont3 < 10) {
+            frase("O resultado é " + (2*cont3));
+            cont3++;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(conteudo) {
+        document.write(conteudo);
+        pulaLinha();
+    }
+
+    var ano = 2016;
+
+    //document.write("Flávio tem " + (ano - 1997) + " anos");
+    mostra("Flávio tem " + (ano - 1997) + " anos");
+
+    //document.write("Joaquim tem " + (ano - 1996) + " anos");
+    mostra("Joaquim tem " + (ano - 1996) + " anos");
+
+    ano = 2017;
+    //document.write("Barney tem " + (ano - 1976)+ " anos");
+    mostra("Barney tem " + (ano - 1976)+ " anos");
+
+    mostra("Óla Mundo !");
+    </script>
+    
+</body>
+</html>

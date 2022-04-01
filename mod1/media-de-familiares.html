@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de idades</title>
+</head>
+<body>
+
+    <script>
+
+        function pulaLinha(){
+            document.write("<br>")
+        }
+
+        function frase(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var limite = parseInt(prompt("Informe o limite de idades para calcular a média"));
+        var soma = 0;
+
+        for (let i = 1; i <= limite; i++) {
+            var idade = parseInt(prompt("Informe a idade do familiar."));
+            soma+=idade;
+        }
+
+        var media = soma/limite;
+
+        frase("A média dos seus familiares é: " + media);
+    </script>
+    
+</body>
+</html>
